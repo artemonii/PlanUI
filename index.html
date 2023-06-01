@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <title>Planogramma-UI</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="page-hero">
+        <div id="header">
+            <center>Planogramma-UI V 1.0</center>
+        </div>
+        <div id="columns">
+
+            <div id="column1" class="hero-column">
+
+
+                <div class="rnd-block">
+                    <div class="block__header">Отделы</div>
+                    <div class="block__text">
+                        <div class="sections__item">Мясной</div>
+                        <div class="sections__item">Рыбный</div>
+                        <div class="sections__item">Кондитерский</div>
+                        <div class="sections__item">Молочный</div>
+                        <div class="sections__item">Бакалейный</div>
+                        <div class="sections__item">Напитки</div>
+                        <div class="sections__item">Хлебобулочный</div>
+                        <div class="sections__item">Овощи и фрукты</div>
+                    </div>
+                </div>
+                <div id="tasks" class="rnd-block">
+                    <div class="block__header">Задания</div>
+                    <div class="block__text">
+                        <div class="list">
+                            <div>В секции A1-3 выставить йогурт "Деревня"</div>
+                            <div>В секции A3-6 убрать Сок "Добрыня" и выставить в секцию A6-5</div>
+                            <div>Поправить все полки стеллажа B</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div id="column2" class="hero-column">
+
+
+                <div class="shelf" data-columns="6">
+                    <div class="shelf-name">Стеллаж A</div>
+                    <div class="shelf-cells">
+                        <div onclick="CellChanger(A1, 'A1')">A1</div>
+                        <div onclick="CellChanger(A2, 'A2')">A2</div>
+                        <div onclick="CellChanger(A3, 'A3')">A3</div>
+                        <div onclick="CellChanger(A4, 'A4')">A4</div>
+                        <div onclick="CellChanger(A5, 'A5')">A5</div>
+                        <div onclick="CellChanger(A6, 'A6')">A6</div>
+                        <div onclick="CellChanger(A7, 'A7')">A7</div>
+                        <div onclick="CellChanger(A8, 'A8')">A8</div>
+                        <div onclick="CellChanger(A9, 'A9')">A9</div>
+                        <div onclick="CellChanger(A10, 'A10')">A10</div>
+                        <div onclick="CellChanger(A11, 'A11')">A11</div>
+                        <div onclick="CellChanger(A12, 'A12')">A12</div>
+                    </div>
+                </div>
+
+                <div class="shelf" data-columns="6">
+                    <div class="shelf-name">Стеллаж B</div>
+                    <div class="shelf-cells">
+                        <div onclick="CellChanger(B1, 'B1')">B1</div>
+                        <div onclick="CellChanger(A1, 'B1')">B2</div>
+                        <div onclick="CellChBnger(A1, 'A1')">B3</div>
+                        <div onclick="CellChanger(A1, 'A1')">B4</div>
+                        <div onclick="CellChanger(A1, 'A1')">B5</div>
+                        <div onclick="CellChanger(A1, 'A1')">B6</div>
+                        <div onclick="CellChanger(A1, 'A1')">B7</div>
+                        <div onclick="CellChanger(A1, 'A1')">B8</div>
+                        <div onclick="CellChanger(A1, 'A1')">B9</div>
+                        <div onclick="CellChanger(A1, 'A1')">B10</div>
+                        <div onclick="CellChanger(A1, 'A1')">B11</div>
+                        <div onclick="CellChanger(A1, 'A1')">B12</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div id="column3" class="hero-column">
+                <div class="rnd-block">
+
+                    <div id="cell-info__wrapper">
+                        <div class="block__header" id="cell-header"></div>
+                        <div class="block__text" id="cell-info">
+                            Выберите секцию для просмотра товаров.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
